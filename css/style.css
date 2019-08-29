@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* font-family: "Nunito Sans", sans-serif; */
   font-family: "Comfortaa", cursive;
   color: #fff;
   margin: 0;
@@ -12,18 +11,18 @@
   width: 100vw;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  background: url("/img/background.svg");
+  background: url("/Lifebank-alt/img/background.svg");
 }
 
 .navbar {
-  padding-top: 2%;
+  padding-top: 5%;
   width: 100vw;
   display: flex;
   justify-content: space-between;
 }
 
 .logo {
-  padding-left: 26%;
+  padding-left: 10%;
 }
 
 .social {
@@ -41,8 +40,8 @@
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: 10%;
-  left: 85.5%;
+  top: 7%;
+  left: 60%;
   margin-left: -60px;
 }
 
@@ -62,7 +61,7 @@
 }
 
 .phone {
-  padding-left: 45px;
+  padding-left: 28px;
 }
 
 .phone .tooltiptext-2 {
@@ -75,8 +74,8 @@
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: 10%;
-  left: 91%;
+  top: 7%;
+  left: 75%;
   margin-left: -60px;
 }
 
@@ -109,11 +108,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
   position: absolute;
-  top: 35vh;
+  top: 30vh;
 }
 
 .connect {
@@ -125,26 +123,25 @@
 }
 
 .heading {
-  font-size: 80px;
-  margin: 0 !important;
+  font-size: 41px;
+  width: 77vw;
 }
 
 .message {
-  font-size: 27px;
-  padding-bottom: 3%;
+  font-size: 17px;
+  padding-bottom: 8%;
   padding-top: 3%;
   line-height: 100%;
   font-family: "Lato", sans-serif;
-  width: 60vw;
+  width: 80vw;
 }
 
 .btn {
   font-family: "Lato", sans-serif;
   text-decoration: none;
   border-radius: 40px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  text-align: center;
   padding: 10px 30px;
 }
 
@@ -156,10 +153,61 @@
 }
 
 .log-btn {
-  margin-left: 20px;
   color: #fff;
   background-color: transparent;
   border: 2px solid white;
   /* padding: 10px 90px; */
-  
+  margin-top: 2%;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 375px) {
+  .mail .tooltiptext-1 {
+    left: 65%;
+  }
+
+  .phone .tooltiptext-2 {
+    left: 78.5%;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .mail .tooltiptext-1 {
+    left: 68.5%;
+  }
+
+  .phone .tooltiptext-2 {
+    left: 80.5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mail .tooltiptext-1 {
+    top: 10%;
+    left: 80.5%;
+  }
+
+  .phone .tooltiptext-2 {
+    top: 10%;
+    left: 87.4%;
+  }
+
+  .content {
+    justify-content: center;
+    top: 40vh;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 44px;
+    width: 80vw;
+  }
+  .join-btn {
+    margin-right: 5%;
+  }
+
+  .log-btn {
+    margin-top: 0;
+  }
 }
