@@ -11,7 +11,7 @@
   width: 100vw;
   background-size: cover !important;
   background-repeat: no-repeat;
-  background: url("img/background.svg");
+  background: url("/img/background.svg");
 }
 
 .navbar {
