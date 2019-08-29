@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url("/img/background.svg");
+  background: url("/Lifebank-alt/img/background.svg");
   background-size: cover;
   /* background-repeat: no-repeat; */
 }
@@ -29,7 +29,7 @@ body {
 }
 
 .social {
-  padding-right: 4%;
+  padding-right: 2.5%;
   display: flex;
 }
 
@@ -162,6 +162,23 @@ body {
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .mail .tooltiptext-1 {
+    top: 17%;
+    left: 75%;
+  }
+
+  .phone .tooltiptext-2 {
+    top: 17%;
+    left: 83%;
+  }
+
+  .log-btn {
+    margin-top: 0;
+    margin-left: 5%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .navbar {
     padding-top: 3%;
@@ -213,6 +230,22 @@ body {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .mail .tooltiptext-1 {
+    top: 11%;
+    left: 80%;
+  }
+
+  .phone .tooltiptext-2 {
+    top: 11%;
+    left: 88%;
+  }
+
+  .heading {
+    font-size: 53px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .mail .tooltiptext-1 {
     top: 10%;
@@ -247,7 +280,41 @@ body {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
+  .mail .tooltiptext-1 {
+    top: 11%;
+    left: 85%;
+  }
+
+  .phone .tooltiptext-2 {
+    top: 11%;
+    left: 90%;
+  }
+
+  .heading {
+    font-size: 82px;
+    width: 100vw;
+  }
+
+  .message {
+    font-size: 32px;
+    width: 100vw;
+    line-height: 40px;
+    padding-bottom: 5%;
+  }
+
+  .join-btn {
+    margin-right: 10%;
+    font-size: 32px;
+  }
+
+  .log-btn {
+    margin-top: 0;
+    font-size: 32px;
+  }
+}
+
+/* @media only screen and (min-width: 1440px) {
   .logo-wrapper img {
     padding-left: 20%;
   }
@@ -321,4 +388,4 @@ body {
     margin-top: 0;
     font-size: 42px;
   }
-}
+} */
