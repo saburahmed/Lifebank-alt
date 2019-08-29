@@ -10,7 +10,7 @@
   height: 100vh;
   width: 100vw;
   background-size: cover !important;
-  background-repeat: no-repeat !important;
+  background-repeat: no-repeat;
   background: url("/Lifebank-alt/img/background.svg");
 }
 
@@ -21,7 +21,7 @@
   justify-content: space-between;
 }
 
-.logo {
+.logo-wrapper img {
   padding-left: 10%;
 }
 
@@ -43,17 +43,6 @@
   top: 7%;
   left: 60%;
   margin-left: -60px;
-}
-
-.mail .tooltiptext-1::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 90%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #b70303 transparent;
 }
 
 .mail:hover .tooltiptext-1 {
@@ -79,17 +68,6 @@
   margin-left: -60px;
 }
 
-.phone .tooltiptext-2::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 90%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #b70303 transparent;
-}
-
 .phone:hover .tooltiptext-2 {
   visibility: visible;
 }
@@ -108,8 +86,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: left;
-  text-align: left;
+  justify-content: center;
+  text-align: center;
   position: absolute;
   top: 30vh;
 }
@@ -182,14 +160,27 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .navbar {
+    padding-top: 3%;
+  }
+
+  .logo-wrapper img {
+    height: 60px;
+    padding-left: 15%;
+  }
+
+  .social img {
+    height: 36px;
+  }
+
   .mail .tooltiptext-1 {
-    top: 10%;
-    left: 80.5%;
+    top: 9%;
+    left: 77%;
   }
 
   .phone .tooltiptext-2 {
-    top: 10%;
-    left: 87.4%;
+    top: 9%;
+    left: 86.5%;
   }
 
   .content {
@@ -200,14 +191,131 @@
   }
 
   .heading {
-    font-size: 44px;
-    width: 80vw;
+    font-size: 44.8px;
+    width: 100vw;
   }
+
+  .message {
+    font-size: 20px;
+  }
+
   .join-btn {
     margin-right: 5%;
+    font-size: 20px;
   }
 
   .log-btn {
     margin-top: 0;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .mail .tooltiptext-1 {
+    top: 10%;
+    left: 82%;
+  }
+
+  .phone .tooltiptext-2 {
+    top: 10%;
+    left: 89%;
+  }
+
+  .heading {
+    font-size: 60px;
+    width: 100vw;
+  }
+
+  .message {
+    font-size: 27px;
+    width: 100vw;
+    line-height: 40px;
+    padding-bottom: 5%;
+  }
+
+  .join-btn {
+    margin-right: 10%;
+    font-size: 27px;
+  }
+
+  .log-btn {
+    margin-top: 0;
+    font-size: 27px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo-wrapper img {
+    padding-left: 20%;
+  }
+
+  .phone {
+    padding-left: 60px;
+  }
+
+  .mail .tooltiptext-1 {
+    top: 11%;
+    left: 84%;
+  }
+
+  .phone .tooltiptext-2 {
+    top: 11%;
+    left: 91%;
+  }
+
+  .heading {
+    font-size: 86px;
+    width: 100vw;
+  }
+
+  .message {
+    font-size: 38px;
+    width: 100vw;
+    line-height: 40px;
+    padding-bottom: 5%;
+  }
+
+  .join-btn {
+    margin-right: 10%;
+    font-size: 27px;
+  }
+
+  .log-btn {
+    margin-top: 0;
+    font-size: 27px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .mail .tooltiptext-1 {
+    top: 12%;
+    left: 84%;
+  }
+
+  .phone .tooltiptext-2 {
+    top: 12%;
+    left: 91%;
+  }
+
+  .heading {
+    font-size: 96px;
+    width: 100vw;
+  }
+
+  .message {
+    font-size: 33px;
+    width: 70vw;
+    line-height: 50px;
+    padding-bottom: 5%;
+  }
+
+  .join-btn {
+    margin-right: 10%;
+    font-size: 42px;
+  }
+
+  .log-btn {
+    margin-top: 0;
+    font-size: 42px;
   }
 }
