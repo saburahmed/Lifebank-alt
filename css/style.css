@@ -8,8 +8,8 @@
 
 body {
   background: url("/img/background.svg");
-  background-size: cover;
-  /* background-repeat: no-repeat; */
+  background-size: cover !important;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -173,6 +173,16 @@ body {
     left: 83%;
   }
 
+  .heading {
+    font-size: 34px;
+    width: 100vw;
+  }
+
+  .message {
+    font-size: 13px;
+    width: 75vw;
+  }
+
   .log-btn {
     margin-top: 0;
     margin-left: 5%;
@@ -190,7 +200,7 @@ body {
   }
 
   .social img {
-    height: 36px;
+    height: 25px;
   }
 
   .mail .tooltiptext-1 {
